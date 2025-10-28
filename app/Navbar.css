@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +11,6 @@
   position: relative;
   overflow: hidden;
 }
-
-/* Navbar container */
 .navbar {
   background: #fff;
   padding: 0 2rem;
@@ -34,7 +32,6 @@
   height: 70px;
 }
 
-/* Logo styles */
 .nav-logo a {
   color: #1A1A1A;
   text-decoration: none;
@@ -54,7 +51,6 @@
   transform: scale(1.05);
 }
 
-/* Navigation menu */
 .nav-menu {
   display: flex;
   list-style: none;
@@ -97,7 +93,7 @@
   width: 80%;
 }
 
-/* CTA Button */
+
 .cta-button {
   background: #ff6b6b;
   color: white;
@@ -116,7 +112,6 @@
   box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
 }
 
-/* Mobile menu toggle */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -145,7 +140,6 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Main content styles */
 main {
   position: relative;
   min-height: 80vh;
@@ -163,7 +157,7 @@ main {
   z-index: 1;
 }
 
-/* Ensure the image covers the entire container */
+
 .wave-background img {
   width: 100% !important;
   height: 100% !important;
@@ -172,9 +166,10 @@ main {
 }
 .content {
   position: relative;
-  z-index: 3; /* Higher than wave background */
+  z-index: 3; 
+  
   text-align: center;
-  max-width: 800px; /* Slight background for readability */
+  max-width: 800px; 
   padding: 2rem;
   border-radius: 15px;
   backdrop-filter: blur(5px);
@@ -262,7 +257,6 @@ main {
   box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
 }
 
-/* Features Section */
 .features-section {
   padding: 6rem 2rem;
   background: #FAF9F6;
@@ -365,7 +359,6 @@ main {
   color: #2C2C2C;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0 1rem;
@@ -448,12 +441,10 @@ main {
   }
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Add padding to body to account for fixed navbar */
 body {
   padding-top: 70px;
 }
@@ -463,8 +454,6 @@ body {
     padding-top: 60px;
   }
 }
-
-/* Animation for menu items */
 @keyframes slideIn {
   from {
     opacity: 0;
