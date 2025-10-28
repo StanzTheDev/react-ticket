@@ -4,7 +4,6 @@ import './Navbar.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,14 +20,14 @@ const Landing = () => {
       <div className='my-nav'>
     <nav className="navbar">
       <div className="nav-container">
-        {/* Logo */}
+    
         <div className="nav-logo">
           <a href="/" onClick={closeMenu}>
         Paseo  
           </a>
         </div>
 
-        {/* Navigation Menu */}
+
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
             <a href="#home" className="nav-link" onClick={closeMenu}>
@@ -41,23 +40,17 @@ const Landing = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#services" className="nav-link" onClick={closeMenu}>
-              Services
+            <a href="#tickets" className="nav-link" onClick={closeMenu}>
+              Tickets
             </a>
           </li>
           <li className="nav-item">
-            <a href="#portfolio" className="nav-link" onClick={closeMenu}>
-              Portfolio
+            <a href="#dashboard" className="nav-link" onClick={closeMenu}>
+            Dashboard
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#contact" className="nav-link" onClick={closeMenu}>
-              Contact
-            </a>
-          </li>
+   
         </ul>
-
-        {/* Call to Action Button */}
         <div className="nav-cta">
           <Link href='/signup' className="cta-button">Get Started</Link>
         </div>
@@ -132,7 +125,7 @@ const Landing = () => {
           alt="rocket" 
           width={40}
           height={40}
-          // style={{ objectFit: 'cover' }}
+
           priority
         />
               </div>
@@ -142,7 +135,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      {/* Footer */}
+  
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
@@ -156,7 +149,7 @@ const Landing = () => {
               <a href="#contact">Contact</a>
             </div>
             <div className="footer-copyright">
-              © 2024 TicketMaster Pro. All rights reserved.
+              © 2025 Paseo. All rights reserved.
             </div>
           </div>
         </div>
